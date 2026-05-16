@@ -1,4 +1,4 @@
-# Conversational SHL Assessment Recommender
+# Conversational Assessment Recommender
 
 An AI-powered conversational recommendation system.
 
