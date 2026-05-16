@@ -2,8 +2,7 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
 
-# TEMPORARILY DISABLED FOR DEBUGGING
-# from rag.retrieve import retrieve_assessments
+from rag.retrieve import retrieve_assessments
 
 app = FastAPI()
 
