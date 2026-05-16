@@ -179,19 +179,13 @@ def chat(request: ChatRequest):
         )
 
     # ------------------------------------------------
-    # TEMPORARY SAMPLE RESULTS
+    # RETRIEVE RECOMMENDATIONS
     # ------------------------------------------------
 
-    results = [
-        {
-            "name": "Numerical Reasoning Test",
-            "url": "https://www.shl.com"
-        },
-        {
-            "name": "OPQ Personality Assessment",
-            "url": "https://www.shl.com"
-        }
-    ]
+    results = retrieve_assessments(
+        conversation_context,
+        top_k=5
+    )
 
     recommendations = []
 
