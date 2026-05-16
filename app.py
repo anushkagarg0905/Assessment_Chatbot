@@ -2,7 +2,8 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from typing import List
 
-from rag.retrieve import retrieve_assessments
+# TEMPORARILY DISABLED FOR DEBUGGING
+# from rag.retrieve import retrieve_assessments
 
 app = FastAPI()
 
@@ -179,13 +180,19 @@ def chat(request: ChatRequest):
         )
 
     # ------------------------------------------------
-    # RETRIEVE RECOMMENDATIONS
+    # TEMPORARY SAMPLE RESULTS
     # ------------------------------------------------
 
-    results = retrieve_assessments(
-        conversation_context,
-        top_k=5
-    )
+    results = [
+        {
+            "name": "Numerical Reasoning Test",
+            "url": "https://www.shl.com"
+        },
+        {
+            "name": "OPQ Personality Assessment",
+            "url": "https://www.shl.com"
+        }
+    ]
 
     recommendations = []
 
