@@ -1,14 +1,14 @@
 # Conversational SHL Assessment Recommender
 
-An AI-powered conversational recommendation system built for the SHL AI Intern Take-Home Assignment.
+An AI-powered conversational recommendation system.
 
-The system helps recruiters and hiring managers discover relevant SHL assessments through natural language conversation instead of manual keyword search.
+The system helps recruiters and hiring managers discover relevant assessments through natural language conversation instead of manual keyword search.
 
 ---
 
 # Features
 
-- Conversational SHL assessment recommendations
+- Conversational assessment recommendations
 - Semantic search using FAISS vector retrieval
 - FastAPI backend with REST API
 - SHL catalog grounded responses only
